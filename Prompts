@@ -1,0 +1,18 @@
+Prompt 1: Synthetic Data Generation
+{"Generate a Python script named generate_data.py that creates 5 synthetic e-commerce CSV files: customers.csv, products.csv, orders.csv, order_items.csv, and categories.csv. 
+Create 20 rows for each file. Ensure IDs link correctly (e.g., product category IDs match category IDs). Automatically execute the script once it is written."}
+
+Prompt 2: SQLite Ingestion Pipeline
+{"Create a Python script named ingest_to_sqlite.py. This script should:
+Use the current path to locate the CSVs.
+Create a local SQLite database named ecommerce.db.
+Create tables for each CSV with appropriate column types and define Primary/Foreign keys.
+Ingest all 20 rows from each CSV into their respective tables.
+Print a success message once populated."}
+
+Prompt 3: SQL Multi-Table Join & Analysis
+{"Write a final Python script named analyze_data.py. This script should:
+Connect to the database at ecommerce.db.
+Execute a SQL query that joins the customers, orders, and order_items tables.
+Calculate the Total Spend per Customer (LTV).
+Display the output in a clean, formatted table in the console."}
